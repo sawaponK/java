@@ -1,0 +1,45 @@
+
+public class Depot
+{
+	private String name;
+	private Product product1, product2, product3;
+	
+	//add comments
+	public Depot()
+	{
+		name = "";
+
+		product1 = new Product();
+		product2 = new Product();
+		product3 = new Product();
+	}
+	public Depot(String newName)
+	{
+		name = newName;
+	}
+	public void setName(String newName)
+	{
+		name = newName;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	//}------------------------------------------------------
+	// other methods
+	public void addData (int option, String newName, double newPrice, double newWeight, int newQuantity)
+	{
+		if(option==1) setData1(product1, newName, newPrice, newWeight, newQuantity);
+		else if (option==2) setData1(product2, newName, newPrice, newWeight, newQuantity);
+		else setData1(product3, newName, newPrice, newWeight, newQuantity);
+	}
+	
+	private void setData1(Product p, String name, int age)
+	{
+		p.setName(name);
+		p.setPrice(price);
+		p.setWeight(weight);
+		p.setQuantity(quantity);
+	}
+}
