@@ -1,0 +1,20 @@
+import java.util.*;
+public class Interface
+{
+	////////////private Depot depot1, depot2;
+	
+	public void run()
+	{
+Scanner console = new Scanner(System.in);
+System.out.println("Enter name: ");
+String name = console.nextLine();
+Product p = new Product();
+p.setName(name);
+System.out.println("Name: " + p.getName());
+	}
+	public static void main(String[] args) {
+		Interface intFace = new Interface();
+		intFace.run();
+	}
+}
+
